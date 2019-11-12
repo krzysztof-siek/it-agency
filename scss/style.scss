@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-item   {
+    position: relative;
+
+p{
+    position: absolute;
+    left:50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+}
+}
+
+
+.icon {
+    position: relative;
+    margin: 1.2rem;
+    padding: 1rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+    .fas,.far {
+        position: absolute;
+        font-size: 3rem;
+        color: black;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+   
+   
+}
+
+
+.navbar-nav {
+    justify-content: center;
+    align-items: center;  
+}
+
+.show {
+    margin: 1.2rem;
+    padding: 1rem;
+
+
+}
+
+
+
+

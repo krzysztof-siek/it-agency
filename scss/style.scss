@@ -1,3 +1,15 @@
+// variables
+
+$main-color: #FFBB04;
+
+
+
+
+
+
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,10 +18,15 @@ html {
     position: relative;
 
 p{
+    color: black;
     position: absolute;
     left:50%;
     bottom: -30px;
     transform: translateX(-50%);
+}
+.active p{
+    color: $main-color;
+    font-weight: bold;
 }
 }
 
@@ -20,7 +37,7 @@ p{
     padding: 1rem;
     height: 4.5rem;
     width: 4.5rem;
-    background-color: yellow;
+    background-color: $main-color;
     border-radius: 50%;
     cursor: pointer;
     .fas,.far {
@@ -44,8 +61,52 @@ p{
 .show {
     margin: 1.2rem;
     padding: 1rem;
+}
+
+.jumbotron {
+    background: url("https://cdn.pixabay.com/photo/2018/03/10/12/00/paper-3213924_960_720.jpg");
+    background-size: cover;
+    margin-top:180px;
+    
+    .display-4 {
+        color: $main-color;
+    }
+   
+    
+    .darken {
+        padding: 2rem;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 1;
+    }
+} 
 
 
+
+
+.navbar-toggler{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-secondary {
+    background-color: $main-color;
+    color:black;
+    border: none;
+    &:hover{
+        background-color: darken($main-color, 5%);
+    }
+
+}
+
+.fa-cog {
+    font-size: 7rem;
+}
+
+img {
+    width: 100%;
 }
 
 

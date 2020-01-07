@@ -1,5 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
 
+html {
+    font-family: "Proxima";
+}
 
 $buttonColor: linear-gradient(90deg, rgba(73, 0, 124, 1) 0%, rgba(73, 0, 112, 1) 40%, rgba(182, 0, 133, 1) 100%);
 $buttonColorHover: linear-gradient(270deg, rgba(73, 0, 124, 1) 0%, rgba(73, 0, 112, 1) 42%, rgba(182, 0, 133, 1) 100%);

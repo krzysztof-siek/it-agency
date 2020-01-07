@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     // end of toggle nav-links
 
-    // listener for resize window and in case toggle class to navLink
+
     addCloseClassToNavLink = () => {
         let windowWidth = window.innerWidth;
         if (windowWidth >= 768) {
@@ -34,6 +34,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     addCloseClassToNavLink();
 
 
+    // listener for resize window and in case toggle class to navLink
     changeWindowSize = () => {
         let windowWidth = window.innerWidth
         if (windowWidth >= 768) {

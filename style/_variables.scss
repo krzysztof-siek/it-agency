@@ -1,0 +1,25 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css");
+
+
+$buttonColor: linear-gradient(90deg, rgba(73, 0, 124, 1) 0%, rgba(73, 0, 112, 1) 40%, rgba(182, 0, 133, 1) 100%);
+$buttonColorHover: linear-gradient(270deg, rgba(73, 0, 124, 1) 0%, rgba(73, 0, 112, 1) 42%, rgba(182, 0, 133, 1) 100%);
+$white: #fff;
+$black: #000000;
+
+$baseMargin: 10px;
+$baseMargin2: 20px;
+$baseMargin3: 30px;
+$baseMargin5: 50px;
+
+
+@font-face {
+    font-family: 'Proxima';
+    src: url("../fonts/ProximaNova-Regular.otf") format('opentype');
+    font-family: 'Proxima-Lt';
+    src: url("../fonts/Proxima\ Nova\ Alt\ Light.otf") format('opentype');
+    font-family: 'Proxima-Thin';
+    src: url("../fonts/Proxima\ Nova\ Alt\ Thin.otf") format('opentype');
+    font-family: 'Proxima-ExB';
+    src: url("../fonts/Proxima\ Nova\ Extrabold.otf") format('opentype');
+
+}

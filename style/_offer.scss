@@ -43,4 +43,40 @@
             }
         }
     }
+
+    .carousel {
+        border: 1px solid black;
+        position: relative;
+        height: 400px;
+        width: 500px;
+        padding: 50px 0;
+
+        .slider-btn {
+            position: absolute;
+            bottom: 0%;
+            z-index: 100;
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .img-slide {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            transition: 1s;
+            // overflow: hidden;
+            // transform: translateX(-50%);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

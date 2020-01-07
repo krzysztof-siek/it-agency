@@ -51,7 +51,37 @@ window.addEventListener('DOMContentLoaded', (event) => {
     window.addEventListener('resize', changeWindowSize);
 
 
+    // Slider in offer section
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    const imgSlide = document.querySelector(".img-slide")
+    let translate = 0;
 
+    prevSlide = () => {
+        if (translate >= 0) {
+            translate = -600
+        }
+        translate = translate + 100;
+        imgSlide.style.transform = `translateX(${translate}%)`
+        console.log(translate);
+        console.log("prev");
+
+
+
+    }
+
+    nextSlide = () => {
+        if (translate <= -500) {
+            translate = 0
+        }
+        translate = translate - 100;
+        imgSlide.style.transform = `translateX(${translate}%)`
+        console.log(translate);
+        console.log("next");
+    }
+
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
 
 
 

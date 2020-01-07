@@ -758,4 +758,41 @@ header .main .heading-second {
   font-weight: 700;
   margin-bottom: 10px;
 }
+
+.offer .carousel {
+  border: 1px solid black;
+  position: relative;
+  height: 400px;
+  width: 500px;
+  padding: 50px 0;
+}
+
+.offer .carousel .slider-btn {
+  position: absolute;
+  bottom: 0%;
+  z-index: 100;
+}
+
+.offer .carousel .next {
+  right: 20px;
+}
+
+.offer .carousel .prev {
+  left: 20px;
+}
+
+.offer .carousel .img-slide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.offer .carousel .img-slide img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

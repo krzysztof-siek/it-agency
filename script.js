@@ -61,8 +61,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     changeSliderWidth = () => {
         windowWidth = window.innerWidth;
-        console.log("change" + windowWidth);
-
         if (windowWidth >= 1200) {
             slideWidth = windowWidth / 3
             imgSlide.style.width = `${slideWidth}px`
@@ -73,7 +71,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             slideWidth = windowWidth;
             imgSlide.style.width = `${slideWidth}px`
         }
-        console.log(mobile);
     }
 
 
@@ -115,18 +112,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
             translate = translate - 100;
             imgSlide.style.transform = `translateX(${translate}%)`
         }
-
     }
-
     prevBtn.addEventListener('click', prevSlide);
     nextBtn.addEventListener('click', nextSlide);
-
-
-
-
-
-
-
-
 
 });

@@ -892,6 +892,7 @@ header .main .heading-second {
 
 .offer .carousel .img-slide img {
   width: 100%;
+  position: relative;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -903,14 +904,23 @@ header .main .heading-second {
 }
 
 .contact {
-  height: 600px;
   position: relative;
 }
 
+.contact img {
+  width: 100%;
+  height: auto;
+}
+
 .contact .pin {
+  width: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+.contact .pin img {
+  width: 100%;
 }
 
 footer {

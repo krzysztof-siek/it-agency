@@ -45,34 +45,45 @@
     }
 
     .carousel {
-        border: 1px solid black;
         position: relative;
-        height: 400px;
-        width: 500px;
-        padding: 50px 0;
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
 
         .slider-btn {
             position: absolute;
-            bottom: 0%;
+            top: 50%;
             z-index: 100;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: none;
+            color: $white;
+            font-size: 24px;
+            opacity: 0.9;
+            padding: 10px 30px;
+            border-radius: 30px;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+                ;
+            }
         }
 
         .next {
-            right: 20px;
+            right: 10px;
         }
 
         .prev {
-            left: 20px;
+            left: 10px;
         }
 
         .img-slide {
             position: relative;
-            height: 100%;
+            height: auto;
             width: 100%;
             display: flex;
             transition: 1s;
-            // overflow: hidden;
-            // transform: translateX(-50%);
+
 
             img {
                 width: 100%;

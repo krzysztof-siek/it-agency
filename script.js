@@ -44,8 +44,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             NavLinks.classList.add('close')
             OpenBtn.classList.remove('hide')
         }
-
-
     }
 
     window.addEventListener('resize', changeWindowSize);
@@ -55,29 +53,62 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const prevBtn = document.querySelector(".prev");
     const nextBtn = document.querySelector(".next");
     const imgSlide = document.querySelector(".img-slide")
+
+
+    let windowWidth = window.innerWidth;
+    let slideWidth = windowWidth;
+    let mobile = true;
+
+    changeSliderWidth = () => {
+        if (windowWidth >= 1200) {
+            slideWidth = windowWidth / 3
+            imgSlide.style.width = `${slideWidth}px`
+            mobile = false;
+
+        } else {
+            mobile = true;
+            sliderWidth = windowWidth;
+
+        }
+    }
+
+
+    changeSliderWidth();
+
     let translate = 0;
 
     prevSlide = () => {
-        if (translate >= 0) {
-            translate = -600
+        if (mobile) {
+            if (translate >= 0) {
+                translate = -600
+            }
+            translate = translate + 100;
+            imgSlide.style.transform = `translateX(${translate}%)`
+        } else {
+            if (translate >= 0) {
+                translate = -400
+            }
+            translate = translate + 100;
+            imgSlide.style.transform = `translateX(${translate}%)`
         }
-        translate = translate + 100;
-        imgSlide.style.transform = `translateX(${translate}%)`
-        console.log(translate);
-        console.log("prev");
-
-
-
     }
 
+
     nextSlide = () => {
-        if (translate <= -500) {
-            translate = 0
+        if (mobile) {
+            if (translate <= -500) {
+                translate = 100
+            }
+            translate = translate - 100;
+            imgSlide.style.transform = `translateX(${translate}%)`
+        } else {
+            if (translate <= -300) {
+                translate = 100
+            }
+            translate = translate - 100;
+            imgSlide.style.transform = `translateX(${translate}%)`
         }
-        translate = translate - 100;
-        imgSlide.style.transform = `translateX(${translate}%)`
-        console.log(translate);
-        console.log("next");
+
     }
 
     prevBtn.addEventListener('click', prevSlide);

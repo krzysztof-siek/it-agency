@@ -760,30 +760,41 @@ header .main .heading-second {
 }
 
 .offer .carousel {
-  border: 1px solid black;
   position: relative;
-  height: 400px;
-  width: 500px;
-  padding: 50px 0;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .offer .carousel .slider-btn {
   position: absolute;
-  bottom: 0%;
+  top: 50%;
   z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  opacity: 0.9;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.offer .carousel .slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .offer .carousel .next {
-  right: 20px;
+  right: 10px;
 }
 
 .offer .carousel .prev {
-  left: 20px;
+  left: 10px;
 }
 
 .offer .carousel .img-slide {
   position: relative;
-  height: 100%;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

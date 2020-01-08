@@ -1,4 +1,21 @@
+const loading = document.querySelector('.loading')
+let isLoaded = false;
+
+
+load = () => {
+    if (isLoaded) {
+        loading.classList.add('hide')
+    }
+}
+
+
+
 window.addEventListener('DOMContentLoaded', (event) => {
+    isLoaded = true;
+    load();
+    console.log('DOM załadowany');
+
+
 
     // Nav-Links toggle on small screen
     const OpenBtn = document.querySelector(".nav-button");
